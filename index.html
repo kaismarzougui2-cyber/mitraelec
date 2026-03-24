@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProPlomb — Plombier Professionnel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        ProPlomb
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#about">À propos</a>
+        <a href="#zone">Zone d'intervention</a>
+        <a href="#contact" class="btn btn--sm">Demander un devis</a>
+      </nav>
+      <button class="nav__burger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#about" onclick="toggleMenu()">À propos</a>
+      <a href="#zone" onclick="toggleMenu()">Zone d'intervention</a>
+      <a href="#contact" onclick="toggleMenu()">Demander un devis</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__badge">Disponible 24h/24 — 7j/7</div>
+      <h1 class="hero__title">Votre plombier de <span>confiance</span> à domicile</h1>
+      <p class="hero__sub">Fuite, dépannage, installation sanitaire ou chauffage — nous intervenons rapidement, avec sérieux et transparence.</p>
+      <div class="hero__cta">
+        <a href="tel:+33600000000" class="btn btn--primary btn--lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Appeler maintenant
+        </a>
+        <a href="#contact" class="btn btn--outline btn--lg">Devis gratuit</a>
+      </div>
+      <div class="hero__trust">
+        <div class="trust-item">
+          <strong>+15 ans</strong>
+          <span>d'expérience</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <strong>Devis</strong>
+          <span>gratuit & sans engagement</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <strong>Garantie</strong>
+          <span>pièces & main-d'œuvre</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/></svg>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nos services</h2>
+        <p>Une gamme complète d'interventions pour particuliers et professionnels.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#dbeafe">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </div>
+          <h3>Fuite d'eau</h3>
+          <p>Détection et réparation rapide de toutes fuites : robinets, joints, canalisations, WC.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#dcfce7">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3>Installation sanitaire</h3>
+          <p>Pose de baignoires, douches, lavabos, WC et tout équipement de salle de bain.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fff7ed">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+          </div>
+          <h3>Chauffage</h3>
+          <p>Installation, entretien et dépannage de chaudières, radiateurs et systèmes de chauffage.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fdf4ff">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9333ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Débouchage</h3>
+          <p>Débouchage de canalisations, éviers, baignoires et colonnes par furet ou haute pression.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fef2f2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Chauffe-eau</h3>
+          <p>Installation et remplacement de chauffe-eaux électriques, thermodynamiques et solaires.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#f0fdf4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Rénovation salle de bain</h3>
+          <p>Refonte complète : carrelage, douche à l'italienne, meuble vasque, robinetterie design.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__img">
+        <div class="about__img-placeholder">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Photo du plombier</span>
+        </div>
+        <div class="about__badge-float">
+          <strong>+15 ans</strong> d'expérience
+        </div>
+      </div>
+      <div class="about__content">
+        <h2>Un artisan à votre écoute, pas une grande enseigne</h2>
+        <p>Je m'appelle <strong>Jean Dupont</strong>, plombier indépendant depuis plus de 15 ans dans la région. Après mon CAP Installateur sanitaire et thermique, j'ai acquis mon expérience auprès de plusieurs entreprises avant de me lancer à mon compte.</p>
+        <p>Mon engagement : des devis clairs, des tarifs honnêtes, et un travail soigné dont vous serez satisfait. Je réponds personnellement à chaque appel — pas de centre d'appels, pas de sous-traitance.</p>
+        <ul class="about__list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            CAP Installateur sanitaire & thermique
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Assuré RCP (Responsabilité Civile Professionnelle)
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Garantie décennale sur les travaux structurels
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Membre de la Capeb (artisanat du bâtiment)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ZONE ── -->
+  <section class="zone" id="zone">
+    <div class="container">
+      <div class="section-header">
+        <h2>Zone d'intervention</h2>
+        <p>Intervention rapide dans un rayon de 40 km autour de <strong>Lyon</strong>.</p>
+      </div>
+      <div class="zone__tags">
+        <span>Lyon</span><span>Villeurbanne</span><span>Bron</span><span>Vénissieux</span>
+        <span>Caluire-et-Cuire</span><span>Décines-Charpieu</span><span>Meyzieu</span>
+        <span>Mions</span><span>Saint-Priest</span><span>Chassieu</span>
+        <span>Rillieux-la-Pape</span><span>Écully</span>
+      </div>
+      <p class="zone__note">Votre commune n'est pas listée ? Contactez-moi, j'interviens aussi ponctuellement au-delà de cette zone.</p>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <h2>Demandez votre devis gratuit</h2>
+        <p>Remplissez le formulaire ou contactez-moi directement. Je vous rappelle sous 2 heures en journée.</p>
+        <div class="contact__channels">
+          <a href="tel:+33600000000" class="channel">
+            <div class="channel__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Téléphone</strong>
+              <span>06 00 00 00 00</span>
+            </div>
+          </a>
+          <a href="mailto:contact@proplomb.fr" class="channel">
+            <div class="channel__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>contact@proplomb.fr</span>
+            </div>
+          </a>
+          <div class="channel">
+            <div class="channel__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Horaires</strong>
+              <span>Lun–Sam · 7h–20h · Urgences 24h/24</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Jean Martin" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Type d'intervention</label>
+          <select id="service" name="service" required>
+            <option value="">Sélectionner…</option>
+            <option>Fuite d'eau</option>
+            <option>Installation sanitaire</option>
+            <option>Chauffage</option>
+            <option>Débouchage</option>
+            <option>Chauffe-eau</option>
+            <option>Rénovation salle de bain</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Description du problème</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin en quelques mots…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          Envoyer ma demande
+        </button>
+        <p class="form-note">Vos données sont utilisées uniquement pour vous recontacter. Aucune liste de diffusion, aucun spam.</p>
+        <div class="form-success" id="formSuccess">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Votre demande a bien été envoyée ! Je vous contacte rapidement.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          ProPlomb
+        </a>
+        <p>Artisan plombier indépendant à Lyon et ses environs.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#about">À propos</a>
+        <a href="#zone">Zone d'intervention</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2025 ProPlomb — Jean Dupont · SIRET 000 000 000 00000</span>
+        <span>Mentions légales · Politique de confidentialité</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+
+    // Close mobile menu on outside click
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('mobileMenu');
+      const burger = document.querySelector('.nav__burger');
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Sticky nav shadow
+    window.addEventListener('scroll', function() {
+      document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Envoi en cours…';
+      setTimeout(() => {
+        document.getElementById('formSuccess').style.display = 'flex';
+        e.target.reset();
+        btn.disabled = false;
+        btn.textContent = 'Envoyer ma demande';
+      }, 800);
+    }
+  </script>
+</body>
+</html>
