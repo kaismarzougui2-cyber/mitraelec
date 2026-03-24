@@ -211,8 +211,23 @@ a  { text-decoration: none; color: inherit; }
 .hero__cta {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   gap: 12px;
   margin-bottom: 52px;
+}
+
+.hero__phone-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero__phone-tagline {
+  font-size: .85rem;
+  font-weight: 600;
+  color: #93c5fd;
+  letter-spacing: .03em;
+  text-transform: uppercase;
 }
 
 .hero__trust {
