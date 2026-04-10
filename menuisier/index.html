@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menuisier Agencement Khalla — Menuisier & Agencement à Toulouse</title>
+  <meta name="description" content="Menuisier artisan à Toulouse : placards sur mesure, parquet, terrasse, pose de fenêtres, escaliers, rénovation. Devis gratuit — 06 65 93 97 61" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+        <span>Khalla<em> Menuiserie</em></span>
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+33665939761" class="btn btn--phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          06 65 93 97 61
+        </a>
+      </nav>
+      <button class="nav__burger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#realisations" onclick="toggleMenu()">Réalisations</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+      <a href="tel:+33665939761" onclick="toggleMenu()">06 65 93 97 61</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Artisan menuisier à Toulouse</p>
+      <h1 class="hero__title">Le bois,<br>façonné à votre image.</h1>
+      <p class="hero__sub">Placards sur mesure, parquet, terrasse, escaliers, portes, rénovation — Khalla Menuiserie réalise tous vos projets bois avec soin et précision.</p>
+      <div class="hero__cta">
+        <a href="tel:+33665939761" class="btn btn--primary btn--lg">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Appeler pour un devis
+        </a>
+        <a href="#realisations" class="btn btn--ghost btn--lg">Voir les réalisations</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- ── CHIFFRES ── -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <strong>Sur mesure</strong>
+        <span>Chaque projet est unique, conçu selon vos dimensions et vos envies.</span>
+      </div>
+      <div class="stat">
+        <strong>Devis gratuit</strong>
+        <span>Estimation claire et détaillée, sans engagement de votre part.</span>
+      </div>
+      <div class="stat">
+        <strong>Toulouse</strong>
+        <span>Intervention rapide dans tout le département de la Haute-Garonne.</span>
+      </div>
+      <div class="stat">
+        <strong>Artisan qualifié</strong>
+        <span>Travail soigné, matériaux de qualité, respect des délais convenus.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nos savoir-faire</h2>
+        <p>Du simple montage au chantier complet, nous intervenons sur tous les travaux de menuiserie et d'agencement.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__num">01</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="16" y2="21"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h3>Placards & Rangements</h3>
+          <ul>
+            <li>Construction et pose de placards</li>
+            <li>Réparation de placards existants</li>
+            <li>Placards entièrement personnalisés</li>
+            <li>Dressings sur mesure</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__num">02</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+          </div>
+          <h3>Pose & Installation</h3>
+          <ul>
+            <li>Fenêtres et portes-fenêtres</li>
+            <li>Cuisines équipées</li>
+            <li>Velux et fenêtres de toit</li>
+            <li>Étagères, lambris, baguettes</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__num">03</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V10l8-8 8 8v10"/><path d="M10 20v-6h4v6"/></svg>
+          </div>
+          <h3>Sols & Terrasses</h3>
+          <ul>
+            <li>Pose de parquets (massif, stratifié)</li>
+            <li>Revêtements de sol divers</li>
+            <li>Construction de terrasses bois</li>
+            <li>Ponçage de parquets et sols</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__num">04</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </div>
+          <h3>Escaliers & Menuiserie</h3>
+          <ul>
+            <li>Création et pose d'escaliers</li>
+            <li>Ponçage : marches, balustres, poteaux</li>
+            <li>Ouvrages de menuiserie sur mesure</li>
+            <li>Sculpture et travail décoratif du bois</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__num">05</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Montage & Bricolage</h3>
+          <ul>
+            <li>Montage de meubles en kit</li>
+            <li>Divers travaux de bricolage</li>
+            <li>Ponçage de meubles et panneaux</li>
+            <li>Rénovation et démastiquage</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--cta">
+          <div class="service-card__num">+</div>
+          <h3>Un projet spécifique ?</h3>
+          <p>Vous avez une idée, un espace à aménager, un meuble à créer ? Parlons-en ensemble, nous trouverons la meilleure solution.</p>
+          <a href="tel:+33665939761" class="btn btn--primary btn--sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            06 65 93 97 61
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RÉALISATIONS ── -->
+  <section class="realisations" id="realisations">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <h2>Nos réalisations</h2>
+        <p>Un aperçu de quelques chantiers récents — chaque projet est différent, chaque résultat est le reflet d'un travail artisanal soigné.</p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <!-- Les images sont chargées dynamiquement depuis le dossier /images/ -->
+        <!-- Si aucune image n'est trouvée, les placeholders s'affichent -->
+      </div>
+
+      <div class="gallery__empty" id="galleryEmpty">
+        <p>Les photos de réalisations arrivent bientôt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+
+      <div class="contact__info">
+        <h2>Parlons de votre projet</h2>
+        <p>Contactez-moi directement par téléphone ou via le formulaire. Je vous réponds rapidement et établis un devis gratuit, sans engagement.</p>
+
+        <div class="contact__cards">
+          <a href="tel:+33665939761" class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Téléphone</strong>
+              <span>06 65 93 97 61</span>
+            </div>
+          </a>
+          <div class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Zone d'intervention</strong>
+              <span>Toulouse & Haute-Garonne</span>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Disponibilité</strong>
+              <span>Lun – Sam · 7h00 – 19h00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Jean Martin" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required />
+        </div>
+        <div class="form-group">
+          <label for="service">Type de travaux</label>
+          <select id="service" name="service" required>
+            <option value="">Sélectionner…</option>
+            <option>Placards / Rangements</option>
+            <option>Pose de fenêtres / portes</option>
+            <option>Parquet / Revêtement de sol</option>
+            <option>Terrasse bois</option>
+            <option>Escaliers</option>
+            <option>Montage de meubles</option>
+            <option>Ponçage</option>
+            <option>Cuisine</option>
+            <option>Autre / Sur mesure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Description du projet</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet en quelques mots…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
+        <p class="form-note">Réponse sous 24h. Devis gratuit et sans engagement.</p>
+        <div class="form-success" id="formSuccess">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Votre demande a bien été envoyée !
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" style="color:#fff">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+          <span style="color:#fff">Khalla<em style="color:#c8a96e"> Menuiserie</em></span>
+        </a>
+        <p>Artisan menuisier à Toulouse<br>Tous travaux de bois & agencement</p>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <a href="#services">Placards sur mesure</a>
+        <a href="#services">Parquet & terrasses</a>
+        <a href="#services">Fenêtres & portes</a>
+        <a href="#services">Escaliers</a>
+        <a href="#services">Rénovation bois</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:+33665939761">06 65 93 97 61</a>
+        <span>Toulouse, Haute-Garonne</span>
+        <span>Lun – Sam · 7h – 19h</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2025 Menuisier Agencement Khalla — Toulouse</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Nav burger ──
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', e => {
+      const menu = document.getElementById('mobileMenu');
+      if (!menu.contains(e.target) && !e.target.closest('.nav__burger')) {
+        menu.classList.remove('open');
+      }
+    });
+
+    // ── Sticky nav ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // ── Smooth scroll ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    // ── Galerie dynamique ──
+    // Listez ici vos fichiers images (déposez-les dans le dossier /menuisier/images/)
+    const images = [
+      // Ajoutez vos noms de fichiers ici, ex :
+      // { src: 'images/placard-1.jpg', caption: 'Placard sur mesure' },
+      // { src: 'images/terrasse-1.jpg', caption: 'Terrasse bois' },
+      // { src: 'images/parquet-1.jpg', caption: 'Pose de parquet' },
+    ];
+
+    const gallery = document.getElementById('gallery');
+    const galleryEmpty = document.getElementById('galleryEmpty');
+
+    if (images.length > 0) {
+      galleryEmpty.style.display = 'none';
+      images.forEach(img => {
+        const item = document.createElement('div');
+        item.className = 'gallery__item';
+        item.innerHTML = `
+          <img src="${img.src}" alt="${img.caption || 'Réalisation Khalla Menuiserie'}" loading="lazy" onclick="openLightbox(this)" />
+          ${img.caption ? `<p class="gallery__caption">${img.caption}</p>` : ''}
+        `;
+        gallery.appendChild(item);
+      });
+    }
+
+    // ── Lightbox ──
+    function openLightbox(img) {
+      const lb = document.createElement('div');
+      lb.className = 'lightbox';
+      lb.innerHTML = `<div class="lightbox__bg"></div><img src="${img.src}" alt="${img.alt}" /><button onclick="this.parentElement.remove()">✕</button>`;
+      lb.querySelector('.lightbox__bg').onclick = () => lb.remove();
+      document.body.appendChild(lb);
+    }
+
+    // ── Formulaire ──
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Envoi…';
+      setTimeout(() => {
+        document.getElementById('formSuccess').style.display = 'flex';
+        e.target.reset();
+        btn.disabled = false;
+        btn.textContent = 'Envoyer ma demande';
+      }, 800);
+    }
+
+    // ── Apparition au scroll ──
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.service-card, .stat, .contact__card').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
