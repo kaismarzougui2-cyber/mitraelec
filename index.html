@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menuisier Agencement Khalla — Menuisier & Agencement à Toulouse</title>
-  <meta name="description" content="Menuisier artisan à Toulouse : placards sur mesure, parquet, terrasse, pose de fenêtres, escaliers, rénovation. Devis gratuit — 06 65 93 97 61" />
+  <title>MITRA ELEC — Électricien à Aubervilliers · 07 60 79 64 63</title>
+  <meta name="description" content="Électricien professionnel à Aubervilliers — dépannage rapide, installation, mise aux normes NF C 15-100. Devis gratuit. ☎ 07 60 79 64 63" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- ── BANDEAU URGENCE ── -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Urgences électriques — intervention sous 2h
+      </span>
+      <a href="tel:+33760796463">07 60 79 64 63</a>
+    </div>
+  </div>
 
   <!-- ── NAV ── -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#" class="nav__logo">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
-        <span>Khalla<em> Menuiserie</em></span>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        MITRA<span>ELEC</span>
       </a>
       <nav class="nav__links">
         <a href="#services">Services</a>
-        <a href="#realisations">Réalisations</a>
+        <a href="#arguments">Pourquoi nous</a>
+        <a href="#zone">Zone</a>
         <a href="#contact">Contact</a>
-        <a href="tel:+33665939761" class="btn btn--phone">
+        <a href="tel:+33760796463" class="btn btn--call">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          06 65 93 97 61
+          Appeler maintenant
         </a>
       </nav>
       <button class="nav__burger" aria-label="Menu" onclick="toggleMenu()">
@@ -34,62 +46,67 @@
     </div>
     <div class="nav__mobile" id="mobileMenu">
       <a href="#services" onclick="toggleMenu()">Services</a>
-      <a href="#realisations" onclick="toggleMenu()">Réalisations</a>
+      <a href="#arguments" onclick="toggleMenu()">Pourquoi nous</a>
+      <a href="#zone" onclick="toggleMenu()">Zone</a>
       <a href="#contact" onclick="toggleMenu()">Contact</a>
-      <a href="tel:+33665939761" onclick="toggleMenu()">06 65 93 97 61</a>
+      <a href="tel:+33760796463" onclick="toggleMenu()" class="mobile-cta">07 60 79 64 63</a>
     </div>
   </header>
 
   <!-- ── HERO ── -->
-  <section class="hero">
-    <!-- Bandeau photos haut -->
-    <div class="hero__img-band hero__img-band--top">
-      <img src="images/cuisine-chene.jpg"             alt="Cuisine chêne sur mesure" />
-      <img src="images/cuisine-moderne.jpg"           alt="Cuisine moderne agencement" />
-      <img src="images/placard-porte-coulissante.jpg" alt="Placard porte coulissante" />
+  <section class="hero" id="accueil">
+    <div class="hero__bg">
+      <div class="hero__circuit"></div>
     </div>
-    <!-- Bandeau photos bas -->
-    <div class="hero__img-band hero__img-band--bot">
-      <img src="images/placard-porte-coulissante.jpg" alt="Placard porte coulissante" />
-      <img src="images/cuisine-chene.jpg"             alt="Cuisine chêne sur mesure" />
-      <img src="images/cuisine-moderne.jpg"           alt="Cuisine moderne agencement" />
-    </div>
-    <div class="hero__overlay"></div>
     <div class="container hero__inner">
-      <p class="hero__eyebrow">Artisan menuisier à Toulouse</p>
-      <h1 class="hero__title">Le bois,<br>façonné à votre image.</h1>
-      <p class="hero__sub">Placards sur mesure, parquet, terrasse, escaliers, portes, rénovation — Khalla Menuiserie réalise tous vos projets bois avec soin et précision.</p>
-      <div class="hero__cta">
-        <a href="tel:+33665939761" class="btn btn--primary btn--lg">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Appeler pour un devis
+      <div class="hero__content">
+        <div class="hero__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Disponible 7j/7 · Urgences 24h/24
+        </div>
+        <h1 class="hero__title">Expertise électrique &<br><span>dépannage rapide</span><br>à Aubervilliers.</h1>
+        <p class="hero__sub">Dépannage, installation, mise aux normes NF C 15-100 — MITRA ELEC intervient rapidement chez vous avec sérieux et transparence.</p>
+        <div class="hero__cta">
+          <a href="tel:+33760796463" class="btn btn--primary btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            07 60 79 64 63
+          </a>
+          <a href="#contact" class="btn btn--outline btn--lg">Devis gratuit</a>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="hero__card-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <ul class="hero__card-list">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Intervention sous 2h pour urgences
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Devis gratuit et transparent
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Garantie décennale
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Norme NF C 15-100 certifiée
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Travail soigné, respect des délais
+          </li>
+        </ul>
+        <a href="tel:+33760796463" class="hero__card-tel">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <span>Appelez maintenant</span>
+            <strong>07 60 79 64 63</strong>
+          </div>
         </a>
-        <a href="#realisations" class="btn btn--ghost btn--lg">Voir les réalisations</a>
-      </div>
-    </div>
-    <div class="hero__scroll">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-    </div>
-  </section>
-
-  <!-- ── CHIFFRES ── -->
-  <section class="stats">
-    <div class="container stats__grid">
-      <div class="stat">
-        <strong>Sur mesure</strong>
-        <span>Chaque projet est unique, conçu selon vos dimensions et vos envies.</span>
-      </div>
-      <div class="stat">
-        <strong>Devis gratuit</strong>
-        <span>Estimation claire et détaillée, sans engagement de votre part.</span>
-      </div>
-      <div class="stat">
-        <strong>Toulouse</strong>
-        <span>Intervention rapide dans tout le département de la Haute-Garonne.</span>
-      </div>
-      <div class="stat">
-        <strong>Artisan qualifié</strong>
-        <span>Travail soigné, matériaux de qualité, respect des délais convenus.</span>
       </div>
     </div>
   </section>
@@ -98,110 +115,143 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <h2>Nos savoir-faire</h2>
-        <p>Du simple montage au chantier complet, nous intervenons sur tous les travaux de menuiserie et d'agencement.</p>
+        <h2>Nos services</h2>
+        <p>De l'urgence au chantier complet, nous couvrons tous vos besoins en électricité.</p>
       </div>
       <div class="services__grid">
 
-        <div class="service-card">
-          <div class="service-card__num">01</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="16" y2="21"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+        <div class="service-card service-card--urgent">
+          <div class="service-card__tag">Urgence</div>
+          <div class="service-card__icon" style="background:#fef3c7; color:#d97706">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
-          <h3>Placards & Rangements</h3>
+          <h3>Dépannage électrique</h3>
+          <p>Intervention rapide sous 2h pour toute panne électrique. Nous diagnostiquons et réparons : coupure de courant, disjoncteur qui saute, court-circuit, prise défaillante.</p>
           <ul>
-            <li>Construction et pose de placards</li>
-            <li>Réparation de placards existants</li>
-            <li>Placards entièrement personnalisés</li>
-            <li>Dressings sur mesure</li>
+            <li>Recherche et réparation de panne</li>
+            <li>Coupure de courant d'urgence</li>
+            <li>Remplacement de disjoncteur</li>
           </ul>
         </div>
 
         <div class="service-card">
-          <div class="service-card__num">02</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+          <div class="service-card__icon" style="background:#dbeafe; color:#1d4ed8">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h3>Pose & Installation</h3>
+          <h3>Installation électrique</h3>
+          <p>Pose et raccordement de tous vos équipements électriques, du tableau au point lumineux. Travail propre, câblage soigné.</p>
           <ul>
-            <li>Fenêtres et portes-fenêtres</li>
-            <li>Cuisines équipées</li>
-            <li>Velux et fenêtres de toit</li>
-            <li>Étagères, lambris, baguettes</li>
+            <li>Tableaux électriques (pose, remplacement)</li>
+            <li>Prises et interrupteurs</li>
+            <li>Éclairage intérieur et extérieur</li>
           </ul>
         </div>
 
         <div class="service-card">
-          <div class="service-card__num">03</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V10l8-8 8 8v10"/><path d="M10 20v-6h4v6"/></svg>
+          <div class="service-card__icon" style="background:#dcfce7; color:#16a34a">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           </div>
-          <h3>Sols & Terrasses</h3>
+          <h3>Mise aux normes</h3>
+          <p>Remise en conformité de votre installation selon la norme NF C 15-100 en vigueur. Obligatoire pour vendre ou louer un logement.</p>
           <ul>
-            <li>Pose de parquets (massif, stratifié)</li>
-            <li>Revêtements de sol divers</li>
-            <li>Construction de terrasses bois</li>
-            <li>Ponçage de parquets et sols</li>
+            <li>Diagnostic et bilan électrique</li>
+            <li>Mise en conformité NF C 15-100</li>
+            <li>Appartements et locaux professionnels</li>
           </ul>
         </div>
 
         <div class="service-card">
-          <div class="service-card__num">04</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          <div class="service-card__icon" style="background:#f3e8ff; color:#9333ea">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </div>
-          <h3>Escaliers & Menuiserie</h3>
+          <h3>Courants faibles</h3>
+          <p>Installation et paramétrage de systèmes de sécurité et de communication pour particuliers et professionnels.</p>
           <ul>
-            <li>Création et pose d'escaliers</li>
-            <li>Ponçage : marches, balustres, poteaux</li>
-            <li>Ouvrages de menuiserie sur mesure</li>
-            <li>Sculpture et travail décoratif du bois</li>
+            <li>Interphonie et visiophonie</li>
+            <li>Contrôle d'accès</li>
+            <li>Alarmes et systèmes de sécurité</li>
           </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card__num">05</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-          </div>
-          <h3>Montage & Bricolage</h3>
-          <ul>
-            <li>Montage de meubles en kit</li>
-            <li>Divers travaux de bricolage</li>
-            <li>Ponçage de meubles et panneaux</li>
-            <li>Rénovation et démastiquage</li>
-          </ul>
-        </div>
-
-        <div class="service-card service-card--cta">
-          <div class="service-card__num">+</div>
-          <h3>Un projet spécifique ?</h3>
-          <p>Vous avez une idée, un espace à aménager, un meuble à créer ? Parlons-en ensemble, nous trouverons la meilleure solution.</p>
-          <a href="tel:+33665939761" class="btn btn--primary btn--sm">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            06 65 93 97 61
-          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ── RÉALISATIONS ── -->
-  <section class="realisations" id="realisations">
+  <!-- ── ARGUMENTS ── -->
+  <section class="arguments" id="arguments">
     <div class="container">
       <div class="section-header section-header--light">
-        <h2>Nos réalisations</h2>
-        <p>Un aperçu de quelques chantiers récents — chaque projet est différent, chaque résultat est le reflet d'un travail artisanal soigné.</p>
+        <h2>Pourquoi choisir MITRA ELEC ?</h2>
+        <p>Un électricien professionnel, réactif et transparent — pas un centre d'appels.</p>
       </div>
-
-      <div class="gallery" id="gallery">
-        <!-- Les images sont chargées dynamiquement depuis le dossier /images/ -->
-        <!-- Si aucune image n'est trouvée, les placeholders s'affichent -->
+      <div class="args__grid">
+        <div class="arg-card">
+          <div class="arg-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Intervention sous 2h</h3>
+          <p>Pour toute urgence électrique, nous nous engageons à intervenir en moins de 2 heures sur Aubervilliers et ses environs.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Garantie décennale</h3>
+          <p>Tous nos travaux sont couverts par une assurance Garantie Décennale. Vous êtes protégé pendant 10 ans.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Devis gratuit</h3>
+          <p>Estimation claire et détaillée sans engagement. Aucune mauvaise surprise sur la facture finale.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Travail certifié</h3>
+          <p>Installations conformes NF C 15-100. Travail soigné, câblage propre, respect scrupuleux des délais convenus.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="gallery__empty" id="galleryEmpty">
-        <p>Les photos de réalisations arrivent bientôt.</p>
+  <!-- ── ZONE ── -->
+  <section class="zone" id="zone">
+    <div class="container">
+      <div class="section-header">
+        <h2>Zone d'intervention</h2>
+        <p>Basé à Aubervilliers, nous intervenons dans tout le nord de Paris.</p>
+      </div>
+      <div class="zone__inner">
+        <div class="zone__tags-wrap">
+          <div class="zone__main">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Aubervilliers (93) — Zone prioritaire
+          </div>
+          <div class="zone__tags">
+            <span>Saint-Denis</span>
+            <span>Pantin</span>
+            <span>La Courneuve</span>
+            <span>Paris (75)</span>
+            <span>Saint-Ouen</span>
+            <span>Bobigny</span>
+          </div>
+          <p class="zone__note">Vous n'êtes pas dans cette liste ? Appelez-nous, nous étudions toute demande.</p>
+        </div>
+        <div class="zone__map">
+          <iframe
+            title="MITRA ELEC — 2 Rue des Cités, Aubervilliers"
+            src="https://maps.google.com/maps?q=2+Rue+des+Cit%C3%A9s%2C+93300+Aubervilliers&output=embed&hl=fr&z=15"
+            width="100%"
+            height="320"
+            style="border:0; border-radius:12px"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -211,17 +261,17 @@
     <div class="container contact__inner">
 
       <div class="contact__info">
-        <h2>Parlons de votre projet</h2>
-        <p>Contactez-moi directement par téléphone ou via le formulaire. Je vous réponds rapidement et établis un devis gratuit, sans engagement.</p>
+        <h2>Demandez votre devis gratuit</h2>
+        <p>Remplissez le formulaire ou appelez-nous directement. Nous vous répondons rapidement.</p>
 
         <div class="contact__cards">
-          <a href="tel:+33665939761" class="contact__card">
+          <a href="tel:+33760796463" class="contact__card contact__card--highlight">
             <div class="contact__card-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div>
-              <strong>Téléphone</strong>
-              <span>06 65 93 97 61</span>
+              <strong>Appel direct</strong>
+              <span>07 60 79 64 63</span>
             </div>
           </a>
           <div class="contact__card">
@@ -229,8 +279,8 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <strong>Zone d'intervention</strong>
-              <span>Toulouse & Haute-Garonne</span>
+              <strong>Adresse</strong>
+              <span>2 Rue des Cités, 93300 Aubervilliers</span>
             </div>
           </div>
           <div class="contact__card">
@@ -239,45 +289,58 @@
             </div>
             <div>
               <strong>Disponibilité</strong>
-              <span>Lun – Sam · 7h00 – 19h00</span>
+              <span>7j/7 · Urgences 24h/24</span>
             </div>
           </div>
+        </div>
+
+        <div class="contact__legal">
+          <p>SIRET : 898 428 727 00017</p>
+          <p>Code APE : 4321A</p>
         </div>
       </div>
 
       <form class="contact__form" onsubmit="handleSubmit(event)">
-        <div class="form-group">
-          <label for="name">Nom complet</label>
-          <input type="text" id="name" name="name" placeholder="Jean Martin" required />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required />
+          </div>
         </div>
         <div class="form-group">
-          <label for="phone">Téléphone</label>
-          <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required />
-        </div>
-        <div class="form-group">
-          <label for="service">Type de travaux</label>
+          <label for="service">Type d'intervention</label>
           <select id="service" name="service" required>
             <option value="">Sélectionner…</option>
-            <option>Placards / Rangements</option>
-            <option>Pose de fenêtres / portes</option>
-            <option>Parquet / Revêtement de sol</option>
-            <option>Terrasse bois</option>
-            <option>Escaliers</option>
-            <option>Montage de meubles</option>
-            <option>Ponçage</option>
-            <option>Cuisine</option>
-            <option>Autre / Sur mesure</option>
+            <option>Dépannage / Urgence</option>
+            <option>Installation électrique</option>
+            <option>Tableau électrique</option>
+            <option>Mise aux normes NF C 15-100</option>
+            <option>Éclairage intérieur / extérieur</option>
+            <option>Interphonie / Contrôle d'accès</option>
+            <option>Alarme</option>
+            <option>Autre</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="message">Description du projet</label>
-          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet en quelques mots…"></textarea>
+          <label for="adresse">Adresse d'intervention</label>
+          <input type="text" id="adresse" name="adresse" placeholder="Votre adresse" />
         </div>
-        <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
-        <p class="form-note">Réponse sous 24h. Devis gratuit et sans engagement.</p>
+        <div class="form-group">
+          <label for="message">Description du problème</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer ma demande
+        </button>
+        <p class="form-note">Réponse sous 1h en journée. Devis entièrement gratuit.</p>
         <div class="form-success" id="formSuccess">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Votre demande a bien été envoyée !
+          Demande envoyée ! Nous vous contactons rapidement.
         </div>
       </form>
 
@@ -288,36 +351,36 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#" class="nav__logo" style="color:#fff">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
-          <span style="color:#fff">Khalla<em style="color:#c8a96e"> Menuiserie</em></span>
+        <a href="#" class="nav__logo footer__logo">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          MITRA<span>ELEC</span>
         </a>
-        <p>Artisan menuisier à Toulouse<br>Tous travaux de bois & agencement</p>
+        <p>Électricien professionnel à Aubervilliers.<br>Dépannage, installation, mise aux normes.</p>
       </div>
       <div class="footer__col">
         <h4>Services</h4>
-        <a href="#services">Placards sur mesure</a>
-        <a href="#services">Parquet & terrasses</a>
-        <a href="#services">Fenêtres & portes</a>
-        <a href="#services">Escaliers</a>
-        <a href="#services">Rénovation bois</a>
+        <a href="#services">Dépannage électrique</a>
+        <a href="#services">Installation</a>
+        <a href="#services">Mise aux normes</a>
+        <a href="#services">Courants faibles</a>
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
-        <a href="tel:+33665939761">06 65 93 97 61</a>
-        <span>Toulouse, Haute-Garonne</span>
-        <span>Lun – Sam · 7h – 19h</span>
+        <a href="tel:+33760796463">07 60 79 64 63</a>
+        <span>2 Rue des Cités</span>
+        <span>93300 Aubervilliers</span>
+        <span>7j/7 · Urgences 24h/24</span>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
-        <span>© 2025 Menuisier Agencement Khalla — Toulouse</span>
+      <div class="container footer__bottom-inner">
+        <span>© 2025 MITRA ELEC — SIRET 898 428 727 00017 · APE 4321A</span>
+        <span>Mentions légales</span>
       </div>
     </div>
   </footer>
 
   <script>
-    // ── Nav burger ──
     function toggleMenu() {
       document.getElementById('mobileMenu').classList.toggle('open');
     }
@@ -328,12 +391,10 @@
       }
     });
 
-    // ── Sticky nav ──
     window.addEventListener('scroll', () => {
-      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // ── Smooth scroll ──
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
         const t = document.querySelector(a.getAttribute('href'));
@@ -341,58 +402,23 @@
       });
     });
 
-    // ── Galerie dynamique ──
-    // Ajoutez vos photos dans le dossier images/ et listez-les ici
-    const images = [
-      { src: 'images/cuisine-chene.jpg',              caption: 'Cuisine — pose et agencement chêne' },
-      { src: 'images/cuisine-moderne.jpg',            caption: 'Cuisine — agencement moderne sur mesure' },
-      { src: 'images/placard-porte-coulissante.jpg',  caption: 'Placard avec porte coulissante et étagères' },
-    ];
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.service-card, .arg-card, .contact__card').forEach(el => observer.observe(el));
 
-    const gallery = document.getElementById('gallery');
-    const galleryEmpty = document.getElementById('galleryEmpty');
-
-    if (images.length > 0) {
-      galleryEmpty.style.display = 'none';
-      images.forEach(img => {
-        const item = document.createElement('div');
-        item.className = 'gallery__item';
-        item.innerHTML = `
-          <img src="${img.src}" alt="${img.caption || 'Réalisation Khalla Menuiserie'}" loading="lazy" onclick="openLightbox(this)" />
-          ${img.caption ? `<p class="gallery__caption">${img.caption}</p>` : ''}
-        `;
-        gallery.appendChild(item);
-      });
-    }
-
-    // ── Lightbox ──
-    function openLightbox(img) {
-      const lb = document.createElement('div');
-      lb.className = 'lightbox';
-      lb.innerHTML = `<div class="lightbox__bg"></div><img src="${img.src}" alt="${img.alt}" /><button onclick="this.parentElement.remove()">✕</button>`;
-      lb.querySelector('.lightbox__bg').onclick = () => lb.remove();
-      document.body.appendChild(lb);
-    }
-
-    // ── Formulaire ──
     function handleSubmit(e) {
       e.preventDefault();
       const btn = e.target.querySelector('button[type="submit"]');
       btn.disabled = true;
-      btn.textContent = 'Envoi…';
+      btn.innerHTML = 'Envoi en cours…';
       setTimeout(() => {
         document.getElementById('formSuccess').style.display = 'flex';
         e.target.reset();
         btn.disabled = false;
-        btn.textContent = 'Envoyer ma demande';
-      }, 800);
+        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer ma demande';
+      }, 900);
     }
-
-    // ── Apparition au scroll ──
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.service-card, .stat, .contact__card').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
