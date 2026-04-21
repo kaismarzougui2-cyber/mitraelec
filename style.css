@@ -104,6 +104,7 @@ ul { list-style: none; }
   color: var(--anthra);
 }
 .nav__logo svg { color: var(--blue); }
+.nav__logo-img { width: 42px; height: 42px; object-fit: contain; border-radius: 4px; }
 .nav__logo span { color: var(--blue); }
 
 .nav__links { display: flex; align-items: center; gap: 28px; }
