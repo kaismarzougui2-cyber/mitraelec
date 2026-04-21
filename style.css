@@ -384,6 +384,12 @@ a.contact__card:hover { border-color: var(--blue); }
   border-radius: 8px; padding: 12px 16px;
   font-size: .875rem; font-weight: 500; margin-top: 14px;
 }
+.form-error {
+  display: none; align-items: center; gap: 10px;
+  background: #fef2f2; color: #991b1b; border: 1px solid #fecaca;
+  border-radius: 8px; padding: 12px 16px;
+  font-size: .875rem; font-weight: 500; margin-top: 14px;
+}
 
 @media (max-width: 820px) { .contact__inner { grid-template-columns: 1fr; gap: 40px; } .form-row { grid-template-columns: 1fr; } }
 
